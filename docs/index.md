@@ -10,6 +10,7 @@ basically each time i encourtered a noteworthy problem i solved, i made a small 
 ## suggestions
 - feel free to just **bookmark** this and check it if desperate sometime in the future
 - also, feel free to [open a pull request](https://github.com/KraXen72/tech-support-wiki/pulls) when you solve some issue/have an idea what could fit here. i'll most likely merge it
+	- you can use [obsidian](https://obsidian.md) to edit the `docs` folder
   
 ### contribution guidelines
 - put all images in `docs/public` and reference them as `![alt_text](/image.png)`
