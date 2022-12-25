@@ -1,5 +1,6 @@
 export default {
     "title": "tech support wiki",
+    "base": "/tech-support-wiki/",
     "themeConfig": {
         "sidebar": [
             {

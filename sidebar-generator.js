@@ -23,6 +23,7 @@ let folders = fs.readdirSync("docs")
 const prepend = `export default `
 const configSkeleton = {
 	title: "tech support wiki",
+	base: "/tech-support-wiki/",
 	themeConfig: {
 		sidebar: [],
 		nav: [ { text: 'GitHub', link: 'https://github.com/KraXen72/tech-support-wiki' } ],
