@@ -9,3 +9,8 @@ basically each time i encourtered a noteworthy problem i solved, i made a small 
 ## suggestions
 - feel free to just **bookmark** this and check it if desperate sometime in the future
 - also, feel free to [open a pull request](https://github.com/KraXen72/tech-support-wiki/pulls) when you solve some issue/have an idea what could fit here. i'll most likely merge it
+### contribution guidelines
+- put all images in `docs/public` and reference them as `![alt_text](/image.png)`
+- images & notes should **NOT** contain spaces.
+- notes should have them replaced with `-`, as in `note title` => `note-title`
+- images should have them replaced with `_`, as in `my cool image.png` => `my_cool_image.png`
