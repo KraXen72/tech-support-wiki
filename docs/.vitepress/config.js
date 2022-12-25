@@ -33,10 +33,6 @@ export default {
                         "link": "/general/How-to-Tile-an-Image-in-GIMP---Moyens-IO"
                     },
                     {
-                        "text": "vivaldi history bookmarks are blank",
-                        "link": "/general/vivaldi-history-bookmarks-are-blank"
-                    },
-                    {
                         "text": "vivaldi is dimmer when unfocused",
                         "link": "/general/vivaldi-is-dimmer-when-unfocused"
                     },
