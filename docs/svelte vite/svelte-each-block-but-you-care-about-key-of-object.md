@@ -5,7 +5,7 @@ title: "svelte each block but you care about key of object"
 
 just use object.entries. instead of this:
   
-![](/svelte_each_block_but_you_care%20about_key_of_object.png)  
+![](/svelte_each_block_but_you_care_about_key_of_object.png)  
   
 use:  
   

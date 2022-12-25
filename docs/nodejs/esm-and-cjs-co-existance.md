@@ -9,7 +9,7 @@ https://redfin.engineering/node-modules-at-war-why-commonjs-and-es-modules-cant-
 - most of my electron apps already use utils.js as a commonjs module
 - svelte needs it's stuff in *esm*
 1. the way i've solved it i put general (not requiring node modules) utils in a separate esm module (in subfolder) like this:
-   ![esm and cjs](esm_and_cjs_coexistence-pic.png)
+   ![esm and cjs](/esm_and_cjs_coexistence-pic.png)
 - the subfolder's `package.json` has this: `{"type": "module"}` so its an esm module
 - all functions in (esm) lib.js are exported like this: `export function shortenFilename(){...}`
 1. the `utils.js` imports all the lib's functions with standard named imports and require, and exports them using `module.exports = { namedExports }`
