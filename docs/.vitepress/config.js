@@ -12,8 +12,8 @@ export default {
                         "link": "/electron/dev-server-violently-reloading-app"
                     },
                     {
-                        "text": "electron preload ⇒ renderer",
-                        "link": "/electron/electron-preload-⇒-renderer"
+                        "text": "electron preload to renderer",
+                        "link": "/electron/electron-preload-to-renderer"
                     },
                     {
                         "text": "typescript get intelliSense for contextBridge api",
