@@ -3,16 +3,19 @@ const path = require("path")
 
 let sidebar = []
 
+// go through all folders, filter bad ones
 let folders = fs.readdirSync("docs")
 	.filter(folder => !(folder.startsWith(".") || folder.startsWith("_") || folder.endsWith(".md") || folder == 'public'))
 	.forEach(folder => {
+		// create item entries
 		let items = fs.readdirSync(path.join("docs", folder))
 			.filter(item => item.endsWith(".md"))
 			.map(item => {
 				const title = item.slice(0, -3)
 				return { text: title.replaceAll("-", " "), link: ["", folder, title].join("/") }
 			})
-
+		
+		// push category into sidebar
 		sidebar.push({
 			text: folder,
 			collapsible: true,
@@ -20,7 +23,10 @@ let folders = fs.readdirSync("docs")
 		})
 })
 
+// syntax needed by vitepress
 const prepend = `export default `
+
+// the actual config lol
 const configSkeleton = {
 	title: "tech support wiki",
 	base: "/tech-support-wiki/",
