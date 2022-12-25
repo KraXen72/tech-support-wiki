@@ -1,0 +1,17 @@
+{
+  "name": "tech-support-wiki",
+  "version": "1.0.0",
+  "description": "tech support wiki",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.33",
+    "vue": "^3.2.45"
+  },
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  }
+}
