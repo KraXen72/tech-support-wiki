@@ -166,6 +166,12 @@ export default {
                     }
                 ]
             }
+        ],
+        "nav": [
+            {
+                "text": "GitHub",
+                "link": "https://github.com/KraXen72/tech-support-wiki"
+            }
         ]
     }
 }

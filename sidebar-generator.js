@@ -24,7 +24,8 @@ const prepend = `export default `
 const configSkeleton = {
 	title: "tech support wiki",
 	themeConfig: {
-		sidebar: []
+		sidebar: [],
+		nav: [ { text: 'GitHub', link: 'https://github.com/KraXen72/tech-support-wiki' } ],
 	}
 }
 Object.assign(configSkeleton.themeConfig.sidebar, sidebar)
