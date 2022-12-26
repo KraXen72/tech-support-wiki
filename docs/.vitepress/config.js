@@ -8,12 +8,12 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
-                        "text": "dev server violently reloading app",
-                        "link": "/electron/dev-server-violently-reloading-app"
-                    },
-                    {
                         "text": "electron preload to renderer",
                         "link": "/electron/electron-preload-to-renderer"
+                    },
+                    {
+                        "text": "electron reloader ignore files",
+                        "link": "/electron/electron-reloader-ignore-files"
                     },
                     {
                         "text": "typescript get intelliSense for contextBridge api",
@@ -30,8 +30,8 @@ export default {
                         "link": "/general/how-to-print-2-of-the-same-page-on-1-page"
                     },
                     {
-                        "text": "How to Tile an Image in GIMP   Moyens IO",
-                        "link": "/general/How-to-Tile-an-Image-in-GIMP---Moyens-IO"
+                        "text": "How to Tile an Image in GIMP",
+                        "link": "/general/How-to-Tile-an-Image-in-GIMP"
                     },
                     {
                         "text": "vivaldi is dimmer when unfocused",
@@ -62,8 +62,8 @@ export default {
                         "link": "/javascript/js-locale-aware-array-sort"
                     },
                     {
-                        "text": "js method chaining (it’s beautiful)",
-                        "link": "/javascript/js-method-chaining-(it’s-beautiful)"
+                        "text": "js method chaining",
+                        "link": "/javascript/js-method-chaining"
                     },
                     {
                         "text": "js ts add function to object",
