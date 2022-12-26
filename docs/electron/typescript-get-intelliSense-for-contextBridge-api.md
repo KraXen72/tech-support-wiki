@@ -6,9 +6,9 @@ layout: "doc"
 
 ok so basically this: https://www.electronjs.org/docs/latest/tutorial/context-isolation#usage-with-typescript
 
-v preloade si spravim toto:
-
-```tsx
+preload:
+```ts
+// context is an example function you want to expose in the api
 const context = {
   timestwo: (num: number) => {
     return timestwo(num)
@@ -17,15 +17,13 @@ const context = {
 
 export type IElectronAPI = typeof context;
 
-//console.log(context)
 contextBridge.exposeInMainWorld(
     "api", context
 );
 ```
 
-spravim si fontend.d.ts a dam tam toto:
-
-```tsx
+make a `frontend.d.ts` and put this in it:
+```ts
 import { IElectronAPI } from './../main/preload'; //autoimport vscode extension ftw
 
 declare global {
@@ -34,9 +32,8 @@ declare global {
     }
 }
 ```
-
-a potom vo frontende:
-
-```tsx
+frontend:
+```ts
 const api = window.api
+api.timestwo(2) // => 4 (we get autocomplete)
 ```
