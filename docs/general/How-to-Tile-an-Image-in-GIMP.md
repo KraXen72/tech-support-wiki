@@ -7,7 +7,7 @@ author: Moyens Staff
 layout: "doc"
 ---
 
-# How to Tile an Image in GIMP - Moyens I/O
+# How to Tile an Image in GIMP (by Moyens I/O)
 source: https://uk.moyens.net/how-to/how-to-tile-an-image-in-gimp/
   
 Not everyone likes Photoshop because of its pricing and somewhat complicated nature for beginners. Thanks to its free alternatives like GIMP, you can perform almost any image manipulation task without Photoshop. If you want to tile your image, GIMP would be a good choice to achieve this. GIMP uses less resources compared to Photoshop.

@@ -1,12 +1,12 @@
 ---
-title: "dev server violently reloading app"
+title: "electron reloader ignore files"
 layout: "doc"
 ---
-# dev server violently reloading app
+# dev server violently reloading app?
 
-when you are writing some files in the app (programatically, like with `fs`), make sure it doesen't trigger the dev server reload.
+when you are writing some files in the app (programatically, like with `fs`), make sure it doesen't trigger the dev server reload. 
 
-for example, if using `electron-reloader`:
+for example, if using `electron-reloader` you can set up ignores like this:
 
 ```tsx
 try {

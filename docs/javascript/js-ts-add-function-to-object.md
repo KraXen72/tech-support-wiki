@@ -2,6 +2,7 @@
 title: "js/ts add function to object"
 ---
 # js/ts add function to object
+how to add a new method to an object
 
 instead of doing:
 

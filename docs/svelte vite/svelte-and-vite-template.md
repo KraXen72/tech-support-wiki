@@ -4,6 +4,7 @@ title: "svelte and vite template"
 # svelte and vite template
 
 ### UPDATE:
+(tbh probably just follow whatever instructions are given to you on https://vitejs.dev)
 
 you can just use the cli to init a new svelte + vite project.
 
