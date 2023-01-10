@@ -36,10 +36,6 @@ export default {
                     {
                         "text": "vivaldi is dimmer when unfocused",
                         "link": "/general/vivaldi-is-dimmer-when-unfocused"
-                    },
-                    {
-                        "text": "windows autochecking disk on startup",
-                        "link": "/general/windows-autochecking-disk-on-startup"
                     }
                 ]
             },
@@ -160,6 +156,20 @@ export default {
                     {
                         "text": "html css site makes text smaller on mobile",
                         "link": "/webdev/html-css-site-makes-text-smaller-on-mobile"
+                    }
+                ]
+            },
+            {
+                "text": "windows",
+                "collapsible": true,
+                "items": [
+                    {
+                        "text": "How to change the keyboard language shortcut in Windows 10",
+                        "link": "/windows/How to change the keyboard language shortcut in Windows 10"
+                    },
+                    {
+                        "text": "windows autochecking disk on startup",
+                        "link": "/windows/windows-autochecking-disk-on-startup"
                     }
                 ]
             }
