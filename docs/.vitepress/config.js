@@ -88,6 +88,20 @@ export default {
                 ]
             },
             {
+                "text": "regex",
+                "collapsible": true,
+                "items": [
+                    {
+                        "text": "fixed length palindrome",
+                        "link": "/regex/fixed-length-palindrome"
+                    },
+                    {
+                        "text": "ISO date groups",
+                        "link": "/regex/ISO-date-groups"
+                    }
+                ]
+            },
+            {
                 "text": "svelte vite",
                 "collapsible": true,
                 "items": [

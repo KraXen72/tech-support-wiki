@@ -4,8 +4,7 @@ layout: "doc"
 ---
 # electron preload ⇒ renderer
 
-## solution 1
-thanks [ven](https://github.com/Vendicated)!!  
+## solution 1 (credit: [Vendicated](https://github.com/Vendicated))
 setup:  
 ```js
 // preload
@@ -24,9 +23,7 @@ browserWindow.webContents.send("my-message", { some: { data: "it just needs to b
 if you're using typescript, you might wanna check out [how to get intelliSense for contextBridge](typescript-get-intelliSense-for-contextBridge-api)
 
 
-## solution 2
-
-[https://stackoverflow.com/a/68753014](https://stackoverflow.com/a/68753014)
+## solution 2 (Deprecated) [SO Post](https://stackoverflow.com/a/68753014)
 
 You can use [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) to send data from preload to renderer.
 This approach is not recommended, because a lot of polyfills set the `event.source` to `window`
