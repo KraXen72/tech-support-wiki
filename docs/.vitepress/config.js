@@ -26,6 +26,10 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
+                        "text": "clean code horrible performance",
+                        "link": "/general/clean-code-horrible-performance"
+                    },
+                    {
                         "text": "how to print 2 of the same page on 1 page",
                         "link": "/general/how-to-print-2-of-the-same-page-on-1-page"
                     },

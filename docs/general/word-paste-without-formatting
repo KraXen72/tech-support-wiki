@@ -1,0 +1,25 @@
+---
+title: "word paste text without formatting by default"
+layout: "doc"
+---
+# Word: paste text without formatting by default
+By default, Word preserves the original formatting when you paste content into a document using CTRL+V, the Paste button, or right-click + Paste. 
+To change the default, follow these steps.
+
+Go to `File` > `Options` > `Advanced`.
+
+Under `Cut, copy, and paste`, select the down arrow for the setting to change.
+- **Pasting within the same document**  
+  - When you paste content into the same document from which you copied the content.
+- **Pasting between documents**  
+  - When you paste content that was copied from another Word document.
+- **Pasting between documents when style definitions conflict**
+  - When you paste content that was copied from another Word document, and the style that is assigned to the copied text is defined differently in the document where the text is being pasted.
+- **Pasting from other programs**
+  - When you paste content that was copied from another program, such as a browser.
+
+## paste without formatting by default
+To paste without formatting by default, select `Preserve only text` under `Pasting from other programs`
+
+source: https://support.microsoft.com/en-us/office/control-the-formatting-when-you-paste-text-20156a41-520e-48a6-8680-fb9ce15bf3d6
+
