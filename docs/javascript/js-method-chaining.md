@@ -4,8 +4,8 @@ title: "js method chaining"
 # js method chaining (it’s beautiful)
 One of the best things you can do in js, is chain methods. more info [here](https://schier.co/blog/method-chaining-in-javascript) but here are some examples:
 
-### example 1: string
-```jsx
+## example 1: string
+```js
 let prependName = fullpath
       .replace(filename, "??filename")
       .replace(basedDir, "??basedDir")
@@ -14,8 +14,23 @@ let prependName = fullpath
       .join(pslash)
 ```
 first replaces some stuff, then splits (now we have an array), filter the array and join back into a string. This one was pretty easy, but this feature is really powerful. Let's see another example:
+
+## example 2: grabbing and filtering links from site
+```js
+[...document.querySelectorAll("a[href]")]
+  .map(i => i.href)
+  .filter(i => i.startsWith("https://videoportal.joj.sk/prazdniny/epizoda"))
+  .join("\n")
+```
+this particular snippet lets you grab all links to episodes of the TV series 'Prázdniny' from joj.sk.  
+you could use the same approach to grab any anime/tvshow/other video links from a site.
   
-### example 2: array (more complex)
+> bonus tip:  
+> save these links into `batch.txt`, install `yt-dlp`,  
+> run `yt-dlp -a batch.txt --remux-video mp4`  
+> you've sucessfully downloaded all of the links  
+
+## example 3: array (more complex)
 you don't need to completely understand the following example, just see that you can chain a lot of powerful transformations together like this.
 ```js
 certs = initialArray.map(result => {

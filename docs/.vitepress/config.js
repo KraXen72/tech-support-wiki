@@ -58,6 +58,10 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
+                        "text": "js download txt filre",
+                        "link": "/javascript/js-download-txt-filre"
+                    },
+                    {
                         "text": "js locale aware array sort",
                         "link": "/javascript/js-locale-aware-array-sort"
                     },
