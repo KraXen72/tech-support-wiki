@@ -1,17 +1,18 @@
 {
   "name": "tech-support-wiki",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tech support wiki",
   "main": "index.js",
-  "author": "",
+  "author": "KraXen72",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.60",
-    "vue": "^3.2.47"
+    "vitepress": "^1.0.0-rc.31",
+    "vue": "^3.3.9"
   },
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "node ./sidebar-generator.js && vitepress build docs",
+	"regen": "node ./sidebar-generator.js",
+    "build": "pnpm regen && vitepress build docs",
     "preview": "vitepress preview docs"
   }
 }

@@ -30,6 +30,8 @@ const prepend = `export default `
 const configSkeleton = {
 	title: "tech support wiki",
 	base: "/tech-support-wiki/",
+	lastUpdated: true,
+	outline: 'deep',
 	themeConfig: {
 		sidebar: [],
 		nav: [ { text: 'GitHub', link: 'https://github.com/KraXen72/tech-support-wiki' } ],

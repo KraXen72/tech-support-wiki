@@ -1,6 +1,8 @@
 export default {
     "title": "tech support wiki",
     "base": "/tech-support-wiki/",
+    "lastUpdated": true,
+    "outline": "deep",
     "themeConfig": {
         "sidebar": [
             {
@@ -178,6 +180,10 @@ export default {
                     {
                         "text": "html css site makes text smaller on mobile",
                         "link": "/webdev/html-css-site-makes-text-smaller-on-mobile"
+                    },
+                    {
+                        "text": "tailwind windows no bundler",
+                        "link": "/webdev/tailwind-windows-no-bundler"
                     }
                 ]
             },
