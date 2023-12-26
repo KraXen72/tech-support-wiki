@@ -82,8 +82,12 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
-                        "text": "esm and cjs co existance",
-                        "link": "/nodejs/esm-and-cjs-co-existance"
+                        "text": "esm and cjs co existence",
+                        "link": "/nodejs/esm-and-cjs-co-existence"
+                    },
+                    {
+                        "text": "pnpm link",
+                        "link": "/nodejs/pnpm-link"
                     }
                 ]
             },
