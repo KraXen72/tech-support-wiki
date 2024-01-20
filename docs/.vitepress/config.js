@@ -52,6 +52,10 @@ export default {
                     {
                         "text": "set up git submodules",
                         "link": "/git/set-up-git-submodules"
+                    },
+                    {
+                        "text": "set up multiple accounts with ssh windows",
+                        "link": "/git/set-up-multiple-accounts-with-ssh-windows"
                     }
                 ]
             },
