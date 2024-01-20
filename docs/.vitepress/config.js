@@ -7,7 +7,7 @@ export default {
             "link",
             {
                 "rel": "icon",
-                "href": "/favicon.svg",
+                "href": "/tech-support-wiki/favicon.svg",
                 "type": "image/svg+xml"
             }
         ]
