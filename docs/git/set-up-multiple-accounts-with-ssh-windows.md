@@ -57,7 +57,7 @@ An SSH-Agent is something the client (your computer) uses to “sign” a messag
 
 run `$ ssh-add \path\to/.ssh/id_rsa` in your terminal. If you have problems, you may need to setup your ssh-agent. I don’t think there’s problems on \*Nix machines, but Windows users can see the below troubleshooting steps if you run into issues. Your mileage may vary.
 
-### Windows TroubleShooting:
+### Troubleshooting
 
 #### Enabling OpenSSH Client
 Windows users may need to verify ssh-add actually works and an ssh-agent is installed. Here’s a [stackoverflow post that helped me](https://stackoverflow.com/questions/18683092/how-to-run-ssh-add-on-windows). (See tamj0rd2’s answer and the 2019 solution)
@@ -98,6 +98,13 @@ source and more info: [SuperUser](https://superuser.com/questions/1296024/window
 
 #### Bad Owner or Permissions on C:/Users/User/.ssh/config
 Do the same thing as above for `C:/Users/User/.ssh/config`
+
+#### Other
+Try doing the following:
+```
+git config user.name "John C"
+git config user.email "other@email.com"
+```
 
 ## Rinse & Repeat for Steps 4, 5, 6
 
@@ -159,16 +166,20 @@ git push origin master
 
 ![](./ssh-3.png)
 
-Now the only thing you have to do on each repository is set the user/email you’d like to use on that repo.
+Should work!
 
+## Using SSH with GIT
+### Cloning a repo with SSH
 ```
-git config user.name "John C"
-git config user.email "other@email.com"
+git clone git@github.com:username/repo.git
 ```
 
-That’s it!
+### Adding a remote from blank repo to use SSH
+```
+git remote add origin git@github.com:username/repo.git
+```
 
-## Updating an existing repository to use SSH
+### Updating an existing repository to use SSH
 ```
 git remote set-url origin git@github.com:username/repo.git
 ```
