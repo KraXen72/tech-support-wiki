@@ -5,7 +5,13 @@ let sidebar = []
 
 // go through all folders, filter bad ones
 let folders = fs.readdirSync("docs")
-	.filter(folder => !(folder.startsWith(".") || folder.startsWith("_") || folder.endsWith(".md") || folder == 'public'))
+	.filter(folder => !(
+		folder.startsWith(".") 	||
+		folder.startsWith("_") 	||
+		folder.endsWith(".md") 	||
+		folder.endsWith(".vue") ||
+		folder === 'public'
+	))
 	.forEach(folder => {
 		// create item entries
 		let items = fs.readdirSync(path.join("docs", folder))

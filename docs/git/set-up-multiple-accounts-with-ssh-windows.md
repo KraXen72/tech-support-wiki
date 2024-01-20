@@ -8,7 +8,10 @@ author: John Curry and KraXen72
 - this is from web-archive url of https://truthseekers.io/multiple-github-accounts-on-one-computer/
   - I edited the article and added more info
   
-<iframe src="https://www.youtube-nocookie.com/embed/ap56ivm0dhw?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" frameborder="0" loading="lazy" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true" width="728" height="409"></iframe>
+<script setup>
+	import Youtube from '../Youtube.vue';
+</script>
+<Youtube videoId="ap56ivm0dhw"/>
 
 In this tutorial we’re going to setup multiple GitHub accounts on the same computer with SSH. 
 This is useful if you have a work account and a personal account, or any other time you have multiple GitHub accounts that you’re using on the same machine.

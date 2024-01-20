@@ -13,7 +13,10 @@ this is a really interesting read that has been temporarily put here until i fin
   
 > Many programming "best practices" taught today are performance disasters waiting to happen.
   
-<iframe src="https://www.youtube-nocookie.com/embed/tD5NrevFtbU?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" frameborder="0" loading="lazy" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true" width="728" height="409"></iframe>
+<script setup>
+	import Youtube from '../Youtube.vue';
+</script>
+<Youtube videoId="tD5NrevFtbU"/>
 
 *This is a free bonus video from the Performance-Aware Programming series. It shows the real-world performance costs of following “clean code” guidelines. For more information about the course, please see the [About](https://www.computerenhance.com/about) page or the [Table of Contents](https://www.computerenhance.com/p/table-of-contents).*
 
