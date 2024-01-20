@@ -96,6 +96,16 @@ In that case, do the following:
   
 source and more info: [SuperUser](https://superuser.com/questions/1296024/windows-ssh-permissions-for-private-key-are-too-open)
 
+#### Bad Owner or Permissions on C:/Users/User/.ssh/config
+
+This started popping up immediately after I created another user with Administrator privileges, and that account began inheriting access to my .ssh folder.
+
+You do not need to change your permissions whatsoever.
+
+Just go to .ssh, right-click Properties, Security Tab, Advanced. DISABLE INHERITANCE, then click on the Administrator user (the one that is not you) and Remove them. Apply. Done.
+
+source: [StackOverflow](https://stackoverflow.com/questions/49926386/openssh-windows-bad-owner-or-permissions)
+
 ## Rinse & Repeat for Steps 4, 5, 6
 
 Now do the same thing for your other id\_rsa key with your other email, but **add an identifier at the end of the key**! Make sure you add the filename including the path to your .ssh/ folder.
