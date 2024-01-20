@@ -6,8 +6,8 @@
   "author": "KraXen72",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.31",
-    "vue": "^3.3.9"
+    "vitepress": "^1.0.0-rc.39",
+    "vue": "^3.4.15"
   },
   "scripts": {
     "dev": "vitepress dev docs",
