@@ -119,17 +119,17 @@ Now add the second SSH key into the SSH-Agent with:
 Create the config file located in .ssh/ It doesn’t exist by default so you’ll have to create it. **/Users/John/.ssh/config** (no extension on config)
 
 ```
-# Default Account (TruthSeekers for me.)
+# Main account
 Host github.com
    HostName github.com
    User git
    IdentityFile ~/.ssh/id_rsa
 
-# Other account (XYZ co)
-Host github-other
+# Alt
+Host github-alt
    HostName github.com
    User git
-   IdentityFile ~/.ssh/id_rsa_other_account
+   IdentityFile ~/.ssh/id_rsa_other
 ```
 
 ## Test your multiple GitHub account setup!
