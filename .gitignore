@@ -3,3 +3,6 @@ package-lock.json
 docs/.obsidian
 docs/.vitepress/dist
 docs/.vitepress/cache
+docs/.vitepress/cache/**/*
+docs/.vitepress/cache/deps
+docs/.vitepress/cache/deps/**/*

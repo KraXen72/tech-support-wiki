@@ -33,14 +33,24 @@ let folders = fs.readdirSync("docs")
 const prepend = `export default `
 
 // the actual config lol
+/** @type {import('vitepress').} */
 const configSkeleton = {
 	title: "tech support wiki",
 	base: "/tech-support-wiki/",
 	lastUpdated: true,
-	outline: 'deep',
+	head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
 	themeConfig: {
 		sidebar: [],
-		nav: [ { text: 'GitHub', link: 'https://github.com/KraXen72/tech-support-wiki' } ],
+		nav: [ 
+			{ text: 'GitHub', link: 'https://github.com/KraXen72/tech-support-wiki' },
+			{ text: 'Ko-fi', link: 'https://ko-fi.com/kraxen72' }
+		 ],
+		outline: {
+			level: [2, 6]
+		},
+		search: {
+      provider: 'local'
+    }
 	}
 }
 Object.assign(configSkeleton.themeConfig.sidebar, sidebar)

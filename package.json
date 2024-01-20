@@ -11,8 +11,11 @@
   },
   "scripts": {
     "dev": "vitepress dev docs",
-	"regen": "node ./sidebar-generator.js",
+    "regen": "node ./sidebar-generator.js",
     "build": "pnpm regen && vitepress build docs",
     "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "minisearch": "^6.3.0"
   }
 }

@@ -2,7 +2,15 @@ export default {
     "title": "tech support wiki",
     "base": "/tech-support-wiki/",
     "lastUpdated": true,
-    "outline": "deep",
+    "head": [
+        [
+            "link",
+            {
+                "rel": "icon",
+                "href": "/favicon.svg"
+            }
+        ]
+    ],
     "themeConfig": {
         "sidebar": [
             {
@@ -214,7 +222,20 @@ export default {
             {
                 "text": "GitHub",
                 "link": "https://github.com/KraXen72/tech-support-wiki"
+            },
+            {
+                "text": "Ko-fi",
+                "link": "https://ko-fi.com/kraxen72"
             }
-        ]
+        ],
+        "outline": {
+            "level": [
+                2,
+                6
+            ]
+        },
+        "search": {
+            "provider": "local"
+        }
     }
 }
