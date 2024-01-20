@@ -168,6 +168,13 @@ git push origin master
 
 Should work!
 
+## Using alongside HTTPS
+You can set up your main account only in GCM (credential-manager) and use SSH alongside HTTPS for git operations.
+Git will know which one to use based on the url you provide.
+This is useful, if for example you:
+- only have one gitlab accout but 2 github ones: use SSH for github, but HTTPS for gitlab
+- want to always use HTTPS for main account, and ssh for either
+
 ## Using SSH with GIT
 ### Cloning a repo with SSH
 ```
