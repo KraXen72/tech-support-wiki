@@ -7,7 +7,8 @@ export default {
             "link",
             {
                 "rel": "icon",
-                "href": "/favicon.svg"
+                "href": "/favicon.svg",
+                "type": "image/svg+xml"
             }
         ]
     ],

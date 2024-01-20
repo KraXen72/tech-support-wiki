@@ -38,7 +38,7 @@ const configSkeleton = {
 	title: "tech support wiki",
 	base: "/tech-support-wiki/",
 	lastUpdated: true,
-	head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+	head: [['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }]],
 	themeConfig: {
 		sidebar: [],
 		nav: [ 
