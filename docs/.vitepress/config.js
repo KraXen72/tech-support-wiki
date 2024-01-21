@@ -209,6 +209,10 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
+                        "text": "custom powershell prompt",
+                        "link": "/windows/custom-powershell-prompt"
+                    },
+                    {
                         "text": "How to change the keyboard language shortcut in Windows 10",
                         "link": "/windows/How to change the keyboard language shortcut in Windows 10"
                     },
