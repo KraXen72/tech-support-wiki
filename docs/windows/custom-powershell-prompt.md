@@ -43,8 +43,10 @@ Some other settings i'd also recommend:
 
 ```ps1
 function prompt {
-	[Console]::TreatControlCAsInput = $True # block ctrl+c from killing this whle it runs
-	# get both branch name and commit hash before writing anything to not have delayed output
+	# block ctrl+c from killing this while it runs
+	[Console]::TreatControlCAsInput = $True 
+	
+	# get both before writing anything to not have delayed output
 	$gitBranch = & git rev-parse --abbrev-ref HEAD 2>$null
 	$commitHash = & git rev-parse --short HEAD 2>$null
 
