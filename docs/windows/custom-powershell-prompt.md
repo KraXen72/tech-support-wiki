@@ -38,17 +38,19 @@ Some other settings i'd also recommend:
 1. In PowerShell, type `$profile`
 2. Open that file in an editor
    - in VSCode you can alt-click it
-   - if you have VSCode but are not in it right now, just type `code <path>`
+   - if you have VSCode but are not in it right now, just type `code $profile`
 3. Configure your prompt! Here's mine:
 
 ```ps1
 function prompt {
+	[Console]::TreatControlCAsInput = $True # block ctrl+c from killing this whle it runs
+	# get both branch name and commit hash before writing anything to not have delayed output
 	$gitBranch = & git rev-parse --abbrev-ref HEAD 2>$null
+	$commitHash = & git rev-parse --short HEAD 2>$null
 
 	Write-Host "PS" -NoNewLine
 	Write-Host " $PWD" -NoNewLine -ForegroundColor "green"
 	if ($gitBranch) {
-		$commitHash = & git rev-parse --short HEAD 2>$null
 		Write-Host " ($gitBranch" -NoNewLine -ForegroundColor "blue" 
 		if ($commitHash) {
 			Write-Host " " -NoNewLine
@@ -56,6 +58,7 @@ function prompt {
 		}
 		Write-Host ")" -NoNewLine -ForegroundColor "blue"
 	}
+	[Console]::TreatControlCAsInput = $False # enable ctrl+c again
 	$userPrompt = "> "
 	return $userPrompt
 }
@@ -65,8 +68,8 @@ Which results in:
 
 ## Prompt-writing tips:
 - take a look at [various examples in this StackOverflow post](https://stackoverflow.com/questions/1287718/how-can-i-display-my-current-git-branch-name-in-my-powershell-prompt). Most of them are overly complicated, but you'll get an idea what you can do even if you haven't written any powershell code before
+- disable ctrl+c to kill the prompt function with `[Console]::TreatControlCAsInput`
 - use `Write-Host "" -NoNewLine` to write to the current prompt's line
 - use `Write-Host "" -ForegroundColor` or `-BackgroundColor` to set the color
   - the allowed values are: `Black, DarkBlue, DarkGreen, DarkCyan, DarkRed, DarkMagenta, DarkYellow, Gray, DarkGray, Blue, Green, Cyan, Red, Magenta, Yellow, White`
-- set variables to a commands output with a null fallback like above, `$variable = & command>$null`
 - Have Fun!
