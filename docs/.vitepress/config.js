@@ -181,6 +181,10 @@ export default {
                 "collapsible": true,
                 "items": [
                     {
+                        "text": "fix missing characters txt srt",
+                        "link": "/vs code/fix-missing-characters-txt-srt"
+                    },
+                    {
                         "text": "gitlens turn off button in tabbar toolbar",
                         "link": "/vs code/gitlens-turn-off-button-in-tabbar-toolbar"
                     }
