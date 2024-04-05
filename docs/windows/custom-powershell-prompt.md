@@ -43,13 +43,18 @@ Some other settings i'd also recommend:
 
 ```ps1
 function prompt {
+	if ($env:TERM_PROGRAM -eq "vscode") {
+		Set-PSReadLineKeyHandler -Chord 'Ctrl+w' -Function BackwardKillWord
+	}
+
 	# block ctrl+c from killing this while it runs
 	[Console]::TreatControlCAsInput = $True 
-	
 	# get both before writing anything to not have delayed output
 	$gitBranch = & git rev-parse --abbrev-ref HEAD 2>$null
 	$commitHash = & git rev-parse --short HEAD 2>$null
+	#$gitInfo = & git log -1 --pretty=format:"%(decorate:prefix=,suffix=,tag=,separator=,pointer= ) %h" 2>$null
 
+	
 	Write-Host "PS" -NoNewLine
 	Write-Host " $PWD" -NoNewLine -ForegroundColor "green"
 	if ($gitBranch) {
