@@ -101,6 +101,10 @@ export default {
                     {
                         "text": "pnpm link",
                         "link": "/nodejs/pnpm-link"
+                    },
+                    {
+                        "text": "unable to verify leaf signature",
+                        "link": "/nodejs/unable to verify leaf signature"
                     }
                 ]
             },
