@@ -225,6 +225,10 @@ export default {
                         "link": "/windows/How to change the keyboard language shortcut in Windows 10"
                     },
                     {
+                        "text": "sync time w32tm",
+                        "link": "/windows/sync-time-w32tm"
+                    },
+                    {
                         "text": "windows autochecking disk on startup",
                         "link": "/windows/windows-autochecking-disk-on-startup"
                     }
