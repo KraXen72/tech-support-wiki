@@ -49,6 +49,10 @@ export default {
                         "link": "/general/How-to-Tile-an-Image-in-GIMP"
                     },
                     {
+                        "text": "powerpoint compress images",
+                        "link": "/general/powerpoint-compress-images"
+                    },
+                    {
                         "text": "vivaldi is dimmer when unfocused",
                         "link": "/general/vivaldi-is-dimmer-when-unfocused"
                     }
