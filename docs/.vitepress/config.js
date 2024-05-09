@@ -185,6 +185,16 @@ export default {
                 ]
             },
             {
+                "text": "typst",
+                "collapsible": true,
+                "items": [
+                    {
+                        "text": "numbering equations with line breaks",
+                        "link": "/typst/numbering-equations-with-line-breaks"
+                    }
+                ]
+            },
+            {
                 "text": "vs code",
                 "collapsible": true,
                 "items": [
